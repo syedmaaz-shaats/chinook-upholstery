@@ -17,7 +17,7 @@ export default function ContactUsPage() {
     setStatus("loading");
 
     try {
-      const res = await fetch("https://your-email-api.netlify.app/send-message", {
+      const res = await fetch("https://cool-moxie-25d1e7.netlify.app/.netlify/functions/send", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
